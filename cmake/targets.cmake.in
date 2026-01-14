@@ -18,24 +18,6 @@ target_include_directories(${PROJECT_NAME}
 # Имя файла библиотеки. К нему автоматически будет добавлено lib
 set_target_properties(${PROJECT_NAME} PROPERTIES OUTPUT_NAME "${MY_LIB_OUTPUT_NAME}")
 
-
-find_package(Doxygen)
-
-if(Doxygen_FOUND)
-
-    doxygen_add_docs(docs 
-                    WORKING_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/docs
-                    ALL
-                    CONFIG_FILE ${CMAKE_CURRENT_BINARY_DIR}/docs/Doxyfile
-                    )
-
-    # Имя файла библиотеки. К нему автоматически будет добавлено lib
-    set_target_properties(docs PROPERTIES EXCLUDE_FROM_ALL TRUE)
-
-  message(" === Documentation setup complete")
-endif()
-
-
 add_subdirectory(examples EXCLUDE_FROM_ALL)
 
 

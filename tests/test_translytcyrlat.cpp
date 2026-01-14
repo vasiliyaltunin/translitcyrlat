@@ -1,4 +1,4 @@
-#include "../include/translitlatcyr/translitcyrlat.h "
+#include "../include/translitcyrlat/translitcyrlat.h "
 #include <gtest/gtest.h>
 
 using namespace altuninvv::string;
