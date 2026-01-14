@@ -32,5 +32,8 @@ include(${PROJECT_SOURCE_DIR}/cmake/targets.cmake.in)
 # Задаем настройки установки для библиотеки
 include(${PROJECT_SOURCE_DIR}/cmake/install.cmake.in)
 
+# Задаем настройки установки сборки документации
+include(${PROJECT_SOURCE_DIR}/cmake/doxygen.cmake.in)
+
 # Настраиваем модульные тесты
 include(${PROJECT_SOURCE_DIR}/cmake/tests.cmake.in)
