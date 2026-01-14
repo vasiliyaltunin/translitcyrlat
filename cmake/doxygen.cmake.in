@@ -18,7 +18,7 @@ if(Doxygen_FOUND) # Если Doxygen найден
     # Если такое имя уже существует, значит библиотека собирается как част проекта
     if(TARGET doc)
        # Устанавливаем уникальное имя цели для сборки
-       set("DOXYGEN_TARGET" "stringutils-doc")
+       set("DOXYGEN_TARGET" "translitcyrlat-doc")
     endif()
 
     get_directory_property(hasParent PARENT_DIRECTORY)
@@ -26,7 +26,7 @@ if(Doxygen_FOUND) # Если Doxygen найден
     # Если проект используется как папка, то устанавливаем уникальное имя
     if(hasParent)
        # Устанавливаем уникальное имя цели для сборки
-       set("DOXYGEN_TARGET" "stringutils-doc")
+       set("DOXYGEN_TARGET" "translitcyrlat-doc")
     endif()
     
     doxygen_add_docs(${DOXYGEN_TARGET}

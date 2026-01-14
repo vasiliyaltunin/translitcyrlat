@@ -32,7 +32,7 @@ if (GTest_FOUND)
    enable_testing()
 
    # Добавляем тесты
-   add_test(NAME StringUtilsTest COMMAND ${GTESTS_TARGET})
+   add_test(NAME TranslitCyrLatTest COMMAND ${GTESTS_TARGET})
    
    message("=== GoogleTest found and setup complete")
 else()
